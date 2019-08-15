@@ -31,3 +31,19 @@
     background-color: pink; /* Add a dark-grey background on hover */
   }
 
+  img {
+    margin-right: 0px;
+    padding: 0px;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+    background-color: grey;
+    opacity: 0.7;
+    transition: opacity 400ms ease-in-out;
+    transition: transform 400ms ease-in;
+  }
+
+  img:hover {
+    opacity:1;
+    transform:;
+  }
+
+
