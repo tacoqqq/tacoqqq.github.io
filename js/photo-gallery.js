@@ -14,3 +14,10 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+
+$("img").toggle(function()
+    {$(this).animate({width: "400px"}, 'slow');},
+    function()
+    {$(this).animate({width: "120px"}, 'slow');
+});
