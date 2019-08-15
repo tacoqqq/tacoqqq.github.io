@@ -10,4 +10,3 @@ function enlarge(picture) {
 function unDo() {
   document.getElementById('largeView').src = "https://s3.guruin.com/db/photos/911405/url/0213__5_.jpg";
 }
-
