@@ -1,23 +1,13 @@
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("myBtn").style.display = "block";
-  } else {
-    document.getElementById("myBtn").style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
-
-$("img").toggle(function()
-    {$(this).animate({width: "400px"}, 'slow');},
-    function()
-    {$(this).animate({width: "120px"}, 'slow');
+$(document).ready(function() {
+    console.log( "ready!" );
 });
+
+
+function enlarge(picture) {
+  document.getElementById('largeView').src = picture.src;
+}
+
+function unDo() {
+  document.getElementById('largeView').src = "https://s3.guruin.com/db/photos/911405/url/0213__5_.jpg";
+}
+
