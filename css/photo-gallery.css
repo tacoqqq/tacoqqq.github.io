@@ -45,8 +45,72 @@
 
   img:hover {
     opacity:1;
-    transform: scale(1.5);
+    transform: scale(1.1);
     z-index: 100;
   }
 
+  .profile-pic {
+    background-image: url('http://bit.ly/2TAqgm3');
+    background-position: -295px -70px; 
+    height: 200px;
+    width: 200px;
+    margin: 1% auto;
+    border-radius:50%;
+    opacity:1;
+    box-shadow: 0px 8px 8px rgba(129,216,208,.7);
+    transition: transform 300ms ease-in;
+  }
 
+  .profile-pic:hover {
+    opacity:1;
+    transform: scale(1.1);
+    z-index: 100;
+  }
+
+  .largeView-wrap {
+    display: none;
+  }
+
+  .profile {
+    width: 10%;
+  }
+
+  @media screen and (min-width:720px) {
+    .largeView-wrap {
+      margin: 1% auto 2%; 
+      display:flex;
+      justify-content: center;
+
+    }
+
+    #largeView {
+      opacity:1;
+      width: 70%;
+      border: 5px solid white;
+    }
+
+    #largeView:hover {
+      opacity:1;
+      transform: none;
+      z-index: 100;
+    }
+
+    img {
+      margin-right: 0px;
+      padding: 0px;
+      box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+      background-color: grey;
+      opacity: 0.7;
+      -webkit-transition: opacity 400ms ease-in-out, transform 500ms ease-in-out;
+      -moz-transition: opacity 400ms ease-in-out, transform 500ms ease-in-out;
+      -o-transition: opacity 400ms ease-in-out, transform 500ms ease-in-out;
+      transition: opacity 400ms ease-in-out, transform 500ms ease-in-out;
+  }
+
+    img:hover {
+      opacity:1;
+      transform: scale(1.3);
+      z-index: 100;
+  }
+
+  }
